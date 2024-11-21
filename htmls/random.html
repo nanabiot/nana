@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secret</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #ffe4e1, #ffcccc);
+            color: #800040;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #c2185b;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ad1457;
+        }
+        .hidden-image {
+            display: none;
+            margin-top: 20px;
+            width: 200px; 
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+            
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>heeeey</h1>
+        <p>don click the button</p>
+        <button class="button" onclick="showMessage()">:3</button>
+        <p class="hidden-message" id="message">gimme hand pics</p>
+        <img src="lol.jpg" alt="Image" class="hidden-image" id="image">
+        
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById("message");
+            message.style.display = "block";
+            const image = document.getElementById("image");
+            image.style.display = "block";
+   
+        }
+    </script>
+</body>
+</html>
